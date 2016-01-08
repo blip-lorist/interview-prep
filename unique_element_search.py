@@ -31,12 +31,11 @@ def binary_search_recursive(input_array):
 				# the first half is ok, so collect the latter half
 				end = len(input_array)
 				halved_array = input_array[midpoint:end]
-			# else
 			else:
 				# the first half isn't ok, collect it
 				halved_array = input_array[0:midpoint]
+		# if midpoint is even
 		else:
-			# if midpoint is even
 			end = len(input_array)
 			latter_count = len(input_array[midpoint+1:end])
 			if (input_array[midpoint+1] == input_array[midpoint]) and (latter_count % 2 != 0):
