@@ -1,6 +1,9 @@
 def binary_search_recursive(input_array):
-	''' Find the non-duplicate element in a sorted array.'''
-
+	''' Find the non-duplicate element in a sorted array.
+	1. Find the element that appears once in a sorted array where all other elements appear 
+	twice one after another. Find that element in 0(logn) complexity.
+	'''
+	
 	# Base case: when one element remains
 	if len(input_array) == 1:
 		unique = input_array[0]
