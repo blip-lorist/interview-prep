@@ -6,7 +6,12 @@ def is_permutation(string_1, string_2):
     
     # I basically want to check if both of these words use the 
     # same letters. Seems like a hash lookup would be good. 
-    
+        
+
+    # Base case: If the lengths differ, then they are not permutations
+    if len(string_1) != len(string_2):
+        return False
+
     letter_lookup = {}
 
     # Create our lookup dictionary
